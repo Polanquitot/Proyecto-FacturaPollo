@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-left,
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar-left a,
+.navbar-right a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-left a:hover,
+.navbar-right a:hover {
+    background-color: #0056b3; 
+    color: #fff;
+}
+
+.btn-logout, .btn-carrito {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-logout:hover,
+.btn-carrito:hover {
+    background-color: #0056b3; 
+}
+
+main,
+.products-container {
+    padding: 20px;
+}
+
+h2 {
+    color: #007bff; 
+    margin-bottom: 20px;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.product-info p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.product-buttons .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #007bff; 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #dee2e6;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
